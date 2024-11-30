@@ -1,0 +1,164 @@
+/* ----------------------------------- */
+/* Configuración global y variables    */
+/* ----------------------------------- */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Fuente principal */
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Paleta de colores y ajustes visuales */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* Optimización del renderizado de texto */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilo de enlaces */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* ----------------------------------- */
+/* Estilo global del cuerpo del sitio  */
+/* ----------------------------------- */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden; /* Elimina el scroll horizontal */
+  font-family: 'Pacifico', cursive; /* Fuente decorativa */
+}
+
+/* Encabezados principales */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Botones genéricos */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* ----------------------------------- */
+/* Barra de navegación principal       */
+/* ----------------------------------- */
+.navbar {
+  padding: 10px 20px; /* Ajuste interno de la barra */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  z-index: 1000; /* Eleva la barra sobre el contenido */
+  background-color: #343a40 !important; /* Fondo oscuro */
+}
+
+/* Logo dentro del navbar */
+.navbar-brand img {
+  border-radius: 4px; /* Bordes redondeados */
+  height: 40px; /* Tamaño del logo */
+}
+
+/* Texto del título en el navbar */
+.navbar-brand span {
+  color: #ffc107 !important; /* Color amarillo para el título */
+  font-weight: bold;
+}
+
+/* Botones dentro del navbar */
+.navbar .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out; /* Suaviza la interacción */
+}
+.navbar .btn:hover {
+  background-color: #ffc107 !important;
+  color: #343a40 !important;
+}
+
+/* ----------------------------------- */
+/* Hero Section (encabezado principal) */
+/* ----------------------------------- */
+.hero-section {
+  padding-top: 60px; /* Espacio para evitar que se superponga al navbar */
+  margin-bottom: 40px; /* Espacio inferior */
+}
+
+/* Imagen destacada en Hero Section */
+.hero-image {
+  width: 100%; /* Ocupa el ancho completo */
+  height: 400px; /* Altura fija */
+  object-fit: cover; /* Mantiene proporciones */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 20px auto; /* Centra la imagen con márgenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* ----------------------------------- */
+/* Ajustes globales para body y html   */
+/* ----------------------------------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Elimina el scroll horizontal */
+  font-family: 'Pacifico', cursive; /* Aplica la fuente decorativa */
+}
+
+/* ----------------------------------- */
+/* Contenedor principal del contenido  */
+/* ----------------------------------- */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Espaciado general del contenido */
+.content-container {
+  margin-top: 100px; /* Separación entre el navbar y el contenido */
+  padding: 20px; /* Ajuste interno */
+}
+
+/* ----------------------------------- */
+/* Tarjetas personalizadas             */
+/* ----------------------------------- */
+.custom-card {
+  background-color: #ffffff;
+  border-radius: 10px; /* Bordes suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  padding: 20px;
+}
+
+/* ----------------------------------- */
+/* Estilos para imágenes               */
+/* ----------------------------------- */
+.img-fluid {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
